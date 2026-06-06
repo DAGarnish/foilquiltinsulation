@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Foilquiltinsulation",
-  description: "Multifoil Insulation Installers in Kent",
+  description: "SuperQuilt & Multifoil Insulation — Installation for Roofs, Walls & Floors across Kent, Surrey, and Hampshire.",
 };
 
 export default function RootLayout({
@@ -14,13 +14,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className="layout-container">
-          <header className="header">
-            <div className="site-title">
-              <a href="/">Foilquiltinsulation</a>
-            </div>
-            <nav>
-              <ul className="nav-links">
+        <div className="site-wrapper">
+          {/* ── HEADER ── */}
+          <header className="site-header">
+            <a href="/" className="site-title">Foilquiltinsulation</a>
+            <nav aria-label="Main">
+              <ul className="site-nav">
                 <li><a href="/hampshire">Hampshire Installers</a></li>
                 <li><a href="/isle-of-wight">Isle of Wight Installers</a></li>
                 <li><a href="/kent">Kent Installers</a></li>
@@ -28,14 +27,16 @@ export default function RootLayout({
               </ul>
             </nav>
           </header>
+
+          {/* ── PAGE CONTENT ── */}
           {children}
-          <footer className="footer">
+
+          {/* ── FOOTER ── */}
+          <footer className="site-footer">
             <div className="footer-grid">
-              <div className="footer-col">
-                <h4>Foilquiltinsulation</h4>
-                <p style={{ color: '#9ca3af', fontSize: '0.9rem', lineHeight: '1.6' }}>
-                  Professional multifoil insulation supply and fit services across the UK.
-                </p>
+              <div className="footer-brand">
+                <a href="/" className="site-title">Foilquiltinsulation</a>
+                <p>Professional multifoil insulation supply and fit services across the South East.</p>
               </div>
               <div className="footer-col">
                 <h4>About</h4>
@@ -63,7 +64,7 @@ export default function RootLayout({
               </div>
             </div>
             <div className="footer-bottom">
-              <p>Designed with <a href="https://wordpress.org" target="_blank" rel="noreferrer">WordPress</a>. Replicated in Next.js.</p>
+              <p>Designed with WordPress. Replicated in Next.js.</p>
             </div>
           </footer>
         </div>
