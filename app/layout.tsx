@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Kent Installers – WordPress Website",
+  title: "Foilquiltinsulation",
   description: "Multifoil Insulation Installers in Kent",
 };
 
@@ -17,7 +17,7 @@ export default function RootLayout({
         <div className="layout-container">
           <header className="header">
             <div className="site-title">
-              <a href="/">WordPress Website</a>
+              <a href="/">Foilquiltinsulation</a>
             </div>
             <nav>
               <ul className="nav-links">
@@ -32,7 +32,7 @@ export default function RootLayout({
           <footer className="footer">
             <div className="footer-grid">
               <div className="footer-col">
-                <h4>WordPress Website</h4>
+                <h4>Foilquiltinsulation</h4>
                 <p style={{ color: '#9ca3af', fontSize: '0.9rem', lineHeight: '1.6' }}>
                   Professional multifoil insulation supply and fit services across the UK.
                 </p>
