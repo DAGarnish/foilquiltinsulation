@@ -119,7 +119,7 @@ a:hover {
 
 /* ============ HEADER ============ */
 .site-header {
-  background-color: red;
+  background-color: var(--color-base-2);
   padding: 20px var(--sp-50);
   display: flex;
   justify-content: space-between;
