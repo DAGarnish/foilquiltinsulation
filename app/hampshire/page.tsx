@@ -32,6 +32,8 @@ export default function HampshirePage() {
         >
           Hampshire Installers
         </h1>
+
+
       </section>
 
       {/* ── INTRO ─────────────────────────────────────── */}
