@@ -31,6 +31,7 @@ export default function RootLayout({
                 <li><a href="/isle-of-wight">Isle of Wight Installers</a></li>
                 <li><a href="/kent">Kent Installers</a></li>
                 <li><a href="/sussex">Sussex Installers</a></li>
+                <li><a href="/contact-us">Contact Us</a></li>
               </ul>
             </nav>
           </header>

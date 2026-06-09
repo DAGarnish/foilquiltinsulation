@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import KentContactForm from "./KentContactForm";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Kent Installers – Foilquiltinsulation",
@@ -439,13 +439,8 @@ export default function KentPage() {
               marginBottom: "2rem",
             }}
           >
-            <a href="#" className="btn">Get Trade Quote</a>
-            <a href="#" className="btn btn--outline">Book a Survey</a>
-            <a href="#" className="btn btn--outline">Speak to a Technical Lead</a>
+            <Link href="/contact-us" className="btn">Contact Us</Link>
           </div>
-
-          {/* Short form — client component to support onSubmit */}
-          <KentContactForm />
         </div>
       </section>
     </>

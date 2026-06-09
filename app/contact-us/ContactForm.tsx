@@ -1,6 +1,6 @@
 "use client";
 
-export default function KentContactForm() {
+export default function ContactForm() {
   return (
     <form
       style={{
@@ -17,8 +17,6 @@ export default function KentContactForm() {
         "Postcode",
         "Email",
         "Phone",
-        "Project type",
-        "Target U-value",
       ].map((field) => (
         <input
           key={field}
@@ -36,16 +34,19 @@ export default function KentContactForm() {
           }}
         />
       ))}
-      <input
-        type="file"
+      <textarea
+        placeholder="Message"
+        rows={4}
         style={{
           padding: "9px 12px",
           border: "1px solid var(--color-contrast-3)",
           borderRadius: "4px",
           fontFamily: "var(--font-body)",
-          fontSize: "var(--fs-small)",
+          fontSize: "var(--fs-medium)",
           backgroundColor: "var(--color-base-2)",
+          color: "var(--color-contrast)",
           gridColumn: "1 / -1",
+          resize: "vertical",
         }}
       />
       <div style={{ gridColumn: "1 / -1" }}>
