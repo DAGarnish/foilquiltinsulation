@@ -56,7 +56,7 @@ export default function KentPage() {
           </p>
 
           <p>
-            <a href="#" className="btn" style={{ marginTop: "0.5rem" }}>
+            <a href="/contact-us" className="btn" style={{ marginTop: "0.5rem" }}>
               Get a Trade Quote
             </a>
           </p>
@@ -165,7 +165,7 @@ export default function KentPage() {
             </em>
           </p>
           <p>
-            <a href="#" className="btn" style={{ marginTop: "0.5rem" }}>
+            <a href="/contact-us" className="btn" style={{ marginTop: "0.5rem" }}>
               Get a Kent Installation Quote
             </a>
           </p>

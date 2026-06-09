@@ -54,9 +54,9 @@ export default function ContactUsPage() {
               marginBottom: "2rem",
             }}
           >
-            <a href="#" className="btn">Get Trade Quote</a>
-            <a href="#" className="btn btn--outline">Book a Survey</a>
-            <a href="#" className="btn btn--outline">Speak to a Technical Lead</a>
+            <a href="/contact-us" className="btn">Get Trade Quote</a>
+            <a href="/contact-us" className="btn btn--outline">Book a Survey</a>
+            <a href="/contact-us" className="btn btn--outline">Speak to a Technical Lead</a>
           </div>
 
           <ContactForm />

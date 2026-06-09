@@ -347,9 +347,9 @@ export default function HampshirePage() {
             project and get matched with a local installer.
           </p>
           <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap", marginTop: "1.5rem" }}>
-            <a href="#" className="btn">Get a Trade Quote</a>
-            <a href="#" className="btn btn--outline">Book a Site Survey</a>
-            <a href="#" className="btn btn--outline">Request Installer Match</a>
+            <a href="/contact-us" className="btn">Get a Trade Quote</a>
+            <a href="/contact-us" className="btn btn--outline">Book a Site Survey</a>
+            <a href="/contact-us" className="btn btn--outline">Request Installer Match</a>
           </div>
         </div>
       </section>

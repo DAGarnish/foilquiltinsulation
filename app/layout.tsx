@@ -61,7 +61,7 @@ export default function RootLayout({
                 <ul className="footer-links">
                   <li><a href="#">Privacy Policy</a></li>
                   <li><a href="#">Terms and Conditions</a></li>
-                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="/contact-us">Contact Us</a></li>
                 </ul>
               </div>
               <div className="footer-col">

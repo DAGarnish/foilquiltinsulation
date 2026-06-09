@@ -112,7 +112,7 @@ export default function Home() {
                 <h3 className="feature-card__title">{title}</h3>
                 <p className="feature-card__desc">{desc}</p>
                 {cta && (
-                  <a href="#" className="feature-card__link">
+                  <a href="/contact-us" className="feature-card__link">
                     {cta}
                   </a>
                 )}
@@ -312,7 +312,7 @@ export default function Home() {
           </p>
           <p>👉 Call us now or click below for a fast, no-obligation quote.</p>
           <div style={{ height: "var(--sp-20)" }} />
-          <a href="#" className="btn">Get My Quote</a>
+          <a href="/contact-us" className="btn">Get My Quote</a>
         </div>
       </section>
     </>

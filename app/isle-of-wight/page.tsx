@@ -326,10 +326,10 @@ export default function IsleOfWightPage() {
               marginTop: "1.5rem",
             }}
           >
-            <a href="#" className="btn">
+            <a href="/contact-us" className="btn">
               Book a Site Survey
             </a>
-            <a href="#" className="btn btn--outline">
+            <a href="/contact-us" className="btn btn--outline">
               Request a Trade Quote
             </a>
           </div>

@@ -303,10 +303,10 @@ export default function SussexPage() {
               marginTop: "1.5rem",
             }}
           >
-            <a href="#" className="btn">
+            <a href="/contact-us" className="btn">
               Get a Trade Quote
             </a>
-            <a href="#" className="btn btn--outline">
+            <a href="/contact-us" className="btn btn--outline">
               Book a Site Survey
             </a>
             <a href="/contact-us" className="btn btn--outline">
