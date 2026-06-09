@@ -309,7 +309,7 @@ export default function SussexPage() {
             <a href="#" className="btn btn--outline">
               Book a Site Survey
             </a>
-            <a href="#" className="btn btn--outline">
+            <a href="/contact-us" className="btn btn--outline">
               Contact Us
             </a>
           </div>
