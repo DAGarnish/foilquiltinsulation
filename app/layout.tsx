@@ -22,7 +22,9 @@ export default function RootLayout({
         <div className="site-wrapper">
           {/* ── HEADER ── */}
           <header className="site-header">
-            <a href="/" className="site-title">Foilquiltinsulation</a>
+            <a href="/" className="site-title">
+              <img src="/assets/logo.png" alt="Foil Quilt Logo" style={{ height: "120px", width: "auto" }} />
+            </a>
             <nav aria-label="Main">
               <ul className="site-nav">
                 <li><a href="/hampshire">Hampshire Installers</a></li>
@@ -40,7 +42,9 @@ export default function RootLayout({
           <footer className="site-footer">
             <div className="footer-grid">
               <div className="footer-brand">
-                <a href="/" className="site-title">Foilquiltinsulation</a>
+                <a href="/" className="site-title">
+                  <img src="/assets/logo.png" alt="Foil Quilt Logo" style={{ height: "108px", width: "auto" }} />
+                </a>
                 <p>Professional multifoil insulation supply and fit services across the South East.</p>
               </div>
               <div className="footer-col">

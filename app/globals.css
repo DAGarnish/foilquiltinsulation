@@ -154,23 +154,12 @@ a:hover {
 }
 
 .site-title {
-  font-family: var(--font-body);
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: var(--color-contrast);
-  text-decoration: none;
-  letter-spacing: -0.03em;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-}
-.site-title::before {
-  content: "✦";
-  color: var(--color-accent);
+  text-decoration: none;
 }
 .site-title:hover {
   text-decoration: none;
-  color: var(--color-accent);
 }
 
 .site-nav {
