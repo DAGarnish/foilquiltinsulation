@@ -31,27 +31,44 @@ export default function Home() {
 
       {/* ── WHY CHOOSE ───────────────────────────────── */}
       <section className="section section--white">
-        <div className="section__inner">
+        <div className="section__inner--wide">
           <p className="asterisk-rule">*</p>
-          <h2 style={{ marginBottom: "1rem" }}>
-            Why Choose SuperQuilt Multifoil Insulation?
-          </h2>
-          <p style={{ marginBottom: "1.5rem" }}>
-            Unlike bulky PIR boards or mineral wool, SuperQuilt Insulation offers
-            a multi-layered design that combines thermal performance, vapour
-            control, and space efficiency in one solution.
-          </p>
-          <ul className="dot-list">
-            <li>BBA &amp; BDA Certified, NHBC &amp; LABC approved</li>
-            <li>19-layer multifoil insulation (e.g., YBS SuperQuilt) at ~40 mm relaxed thickness</li>
-            <li>Meets Building Regulations without extra PIR boards</li>
-            <li>Accessories: tapes, battens, vapour control layers, fixings</li>
-            <li>Documentation: data sheets, installation guides, certification</li>
-            <li>Saves up to 10% in space and 30% in cost</li>
-          </ul>
-          <p style={{ fontSize: "var(--fs-small)", color: "var(--color-contrast-2)", fontStyle: "italic" }}>
-            Manufactured in the UK, certified and verified
-          </p>
+          <div className="two-col" style={{ alignItems: "center" }}>
+            <div>
+              <h2 style={{ marginBottom: "1.5rem" }}>
+                Why Choose SuperQuilt Multifoil Insulation?
+              </h2>
+              <p style={{ marginBottom: "1.5rem" }}>
+                Unlike bulky PIR boards or mineral wool, SuperQuilt Insulation offers
+                a multi-layered design that combines thermal performance, vapour
+                control, and space efficiency in one solution.
+              </p>
+              <ul className="dot-list">
+                <li>BBA &amp; BDA Certified, NHBC &amp; LABC approved</li>
+                <li>19-layer multifoil insulation (e.g., YBS SuperQuilt) at ~40 mm relaxed thickness</li>
+                <li>Meets Building Regulations without extra PIR boards</li>
+                <li>Accessories: tapes, battens, vapour control layers, fixings</li>
+                <li>Documentation: data sheets, installation guides, certification</li>
+                <li>Saves up to 10% in space and 30% in cost</li>
+              </ul>
+              <p style={{ fontSize: "var(--fs-small)", color: "var(--color-contrast-2)", fontStyle: "italic", marginTop: "1rem" }}>
+                Manufactured in the UK, certified and verified
+              </p>
+            </div>
+            <div>
+              <img
+                src="/assets/superquilt-layers.png"
+                alt="Technical cross-section diagram of YBS SuperQuilt Multi-Layer Insulation showing the 19 layers"
+                style={{
+                  width: "100%",
+                  height: "auto",
+                  borderRadius: "12px",
+                  boxShadow: "var(--shadow-lg)",
+                  border: "1px solid var(--color-contrast-3)"
+                }}
+              />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -90,14 +107,14 @@ export default function Home() {
                 desc: "Experience the fusion of imagination and expertise with Études Architectural Solutions.",
               },
             ].map(({ title, desc, cta }) => (
-              <div key={title}>
-                <p className="asterisk-rule" style={{ fontSize: "1.2rem", marginBottom: "0.5rem" }}>*</p>
-                <h3 style={{ marginBottom: "0.5rem" }}>{title}</h3>
-                <p style={{ color: "var(--color-contrast-2)", marginBottom: "0.5rem" }}>{desc}</p>
+              <div key={title} className="feature-card">
+                <span className="feature-card__badge">✦</span>
+                <h3 className="feature-card__title">{title}</h3>
+                <p className="feature-card__desc">{desc}</p>
                 {cta && (
-                  <p style={{ fontWeight: 500, fontSize: "var(--fs-small)" }}>
-                    <a href="#">{cta}</a>
-                  </p>
+                  <a href="#" className="feature-card__link">
+                    {cta}
+                  </a>
                 )}
               </div>
             ))}
@@ -296,58 +313,6 @@ export default function Home() {
           <p>👉 Call us now or click below for a fast, no-obligation quote.</p>
           <div style={{ height: "var(--sp-20)" }} />
           <a href="#" className="btn">Get My Quote</a>
-        </div>
-      </section>
-
-      {/* ── ÉTUDES COLUMNS ───────────────────────────── */}
-      <section className="section section--white">
-        <div className="two-col" style={{ alignItems: "start" }}>
-          <div>
-            <img
-              src="/assets/tourist-and-building.webp"
-              alt="Études Architect App"
-              style={{ width: "100%", borderRadius: "16px", marginBottom: "1.5rem" }}
-            />
-            <h3>Études Architect App</h3>
-            <ul className="dot-list" style={{ marginTop: "0.5rem" }}>
-              <li>Collaborate with fellow architects.</li>
-              <li>Showcase your projects.</li>
-              <li>Experience the world of architecture.</li>
-            </ul>
-          </div>
-          <div>
-            <img
-              src="/assets/windows.webp"
-              alt="Études Newsletter"
-              style={{ width: "100%", borderRadius: "16px", marginBottom: "1.5rem" }}
-            />
-            <h3>Études Newsletter</h3>
-            <ul className="dot-list" style={{ marginTop: "0.5rem" }}>
-              <li>A world of thought-provoking articles.</li>
-              <li>Case studies that celebrate architecture.</li>
-              <li>Exclusive access to design insights.</li>
-            </ul>
-            <blockquote style={{ borderLeft: "3px solid var(--color-contrast-3)", paddingLeft: "1rem", marginTop: "1.5rem", fontStyle: "italic", fontSize: "var(--fs-medium)" }}>
-              "Études has saved us thousands of hours of work and has unlocked insights we never thought possible."
-            </blockquote>
-            <p style={{ marginTop: "0.5rem", fontSize: "var(--fs-small)", color: "var(--color-contrast-2)", fontWeight: 300 }}>
-              Annie Steiner
-            </p>
-            <p style={{ fontSize: "var(--fs-small)", color: "var(--color-contrast-2)", fontWeight: 300 }}>
-              CEO, Greenprint
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* ── NEWSLETTER ───────────────────────────────── */}
-      <section className="section section--gray">
-        <div className="section__inner">
-          <div className="newsletter-card">
-            <h2>Join 900+ subscribers</h2>
-            <p>Stay in the loop with everything you need to know.</p>
-            <a href="#" className="btn btn--light">Sign up</a>
-          </div>
         </div>
       </section>
     </>
