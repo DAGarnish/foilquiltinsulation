@@ -59,7 +59,7 @@ export default function Home() {
       <section className="section section--gray">
         <div className="section__inner--wide">
           <p className="asterisk-rule">*</p>
-          <h2 style={{ marginBottom: "2.5rem", maxWidth: "var(--content-width)", margin: "0 auto 2.5rem" }}>
+          <h2 style={{ marginBottom: "2.5rem", maxWidth: "var(--content-width)", margin: "0 auto 2.5rem", textAlign: "center" }}>
             Where We Use It
           </h2>
           <div className="features-grid">
